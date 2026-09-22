@@ -474,3 +474,7 @@ async def search_bundle(
         tfidf_recommendations=tfidf_items,
         genre_recommendations=genre_recs,
     )
+
+@app.get("/")
+def root():
+    return {"message": "Movie Recommendation API is running"}
